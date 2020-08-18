@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-/*
+
         //Creating the LayoutInflater instance
         LayoutInflater li = getLayoutInflater();
         //Getting the View object as defined in the customtoast.xml file
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.setView(layout);//setting the view of custom toast layout
         toast.show();
-*/
+
         button = (Button)findViewById(R.id.btnOk);
         button.setOnClickListener(
                 new View.OnClickListener(){
